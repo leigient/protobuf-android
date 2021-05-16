@@ -13,6 +13,8 @@ LOCAL_SRC_FILES := test.pb.cc
 LOCAL_STATIC_LIBRARIES += libprotobuf
 LOCAL_LDLIBS := -lz
 
+LOCAL_LDLIBS := -llog
+
 include $(BUILD_SHARED_LIBRARY)
 
 # This assumes protobuf-android is checked out in a directory named
